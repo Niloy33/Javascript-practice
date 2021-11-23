@@ -1,0 +1,110 @@
+/* let num1 = 2
+let num2 = 11
+let sum = num1 + num2
+
+console.log("sum of the two " + sum) */
+
+/* let age =21
+
+if (age >= 21){
+    console.log("welcome!!!")
+}else
+{
+    console.log("you're under aged")
+} */
+
+/* let age = 199
+
+if (age <100){
+    
+console.log("you're not eligiable to get the gift")
+
+}else if (age === 100)
+{
+    console.log("you're gift is on the way")
+}else
+{
+    console.log("you've already gifted")
+} */
+
+let firstCard = 10
+let secondCard = 7
+let hasBlackjack = false
+let isAlive = true
+let message = " "
+
+let sum = firstCard + secondCard 
+
+let messageEl = document.getElementById("message-el")
+let sumEl = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el")
+
+function startGame(){
+   
+    sumEl.textContent = "Sum: " + sum
+     cardsEl.textContent = "Cards: " + firstCard + "  " + secondCard
+    
+    if (sum <= 20){
+    message = "do you want to draw a new card?"
+    
+}else if(sum === 21) {
+     message = "wohoo! you've got the Blackjack!!!"
+    hasBlackjack = true
+    
+}else{
+     message = "You're out of the game"
+    isAlive = false
+  
+}
+messageEl.textContent = (message)
+    
+}
+
+function newCard(){
+    console.log("Drawing a new card from the deck!")
+}
+********************************************************************************html*************************************************
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">  
+    </head>
+    <body>
+        <h1> Black Jack </h1>
+        <p id="message-el">Want to play a round?</p>
+        <p id="cards-el"> Cards : </p>
+        <p id="sum-el"> Sum  : </p>
+        <button onclick="startGame()">Start Game</button>
+        <button onclick="newCard()">New Card</button>
+      <script src="index.js"></script>  
+    </body>
+</html>
+
+****************************************************css********************************************************
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    background-color: #006400;
+    text-align : center;
+    color: white;
+    font-weight: bold;
+
+}
+
+h1{
+    color: goldenrod
+}
+#message-el {
+    font-style: italic;
+}
+
+button{
+    color: #016f32;
+    width: 150px;
+    background: goldenrod;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px
+}

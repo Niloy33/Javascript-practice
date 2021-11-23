@@ -1,0 +1,101 @@
+js part
+
+/*let firstName = "Sunjidul"
+let lastName = " Niloy"
+
+let fullName = firstName + " "   + lastName
+console.log(fullName)*/
+
+*****************************************************1***************************************************
+/*let name = 'Linda'
+let greeting = 'Hi there'
+
+function call(){
+    let fullName = greeting  +  ", "  + name + "!"
+    console.log(fullName)
+}
+
+call()*/
+*****************************************************2**************************************************
+
+/* let myPoints = 3
+
+function add3points(){
+     myPoints += 3
+    
+}
+function remove1Point(){
+    myPoints -= 1
+}
+add3points()
+add3points()
+add3points()
+remove1Point()
+remove1Point()
+
+console.log (myPoints) */
+
+**********************************************************3***********************************************
+
+/*let errorDoc = document.getElementById("error")
+function noBuy(){
+   errorDoc.textContent = " something went wrong! sorry!!!"
+}*/
+
+**********************************************************4*********************************************
+
+let num1 = 8
+let num2 = 2
+
+document.getElementById("num1-el").textContent = num1
+document.getElementById("num2-el").textContent = num2
+
+let sumAll = document.getElementById("sum-el")
+
+function addition(){
+    result = num1 + num2
+    sumAll.textContent =  "Sum : " + result 
+    
+}
+
+function substraction(){
+    result = num1 - num2
+    sumAll.textContent =  "Sum : " + result 
+    
+}
+
+function multiply(){
+   result = num1 * num2
+    sumAll.textContent =  "Sum : " + result 
+    
+}
+
+function divide(){
+   result = num1 / num2
+    sumAll.textContent =  "Sum : " + result 
+    
+}
+
+html part
+
+<html>
+    <head>
+       
+    </head>
+    <body>
+       
+       <span id = "num1-el"></span>
+       <span id = "num2-el"></span>
+       <br>
+       
+       <button onclick="addition()"> Add </button>
+       <button onclick="substraction()"> Subtract </button>
+       <button onclick="multiply()"> Multiply </button>
+       <button onclick="divide()"> Divide </button>
+       <br>
+       
+       <span id="sum-el"> Sum: </span>
+       
+        <script src="index.js"></script>
+    </body>
+</html>
