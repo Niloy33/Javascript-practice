@@ -1,0 +1,60 @@
+/*let person = {
+    
+    name : "",
+    age : ,
+    country : "Bangladesh"
+    
+    }
+    
+    function logData(){
+        console.log (person.name + " is " + person.age + " years old and lives in " + person.country)
+        }
+    logData()*/
+    
+    /*let age = 27
+    
+    if (age <= 5){
+        console.log("free ride")
+    }else if (age <= 17){
+       console.log("child discount") 
+    }else if(age <= 26){
+        console.log("student discount")
+    }else if(age <= 66){
+        console.log("full price")
+    }else {
+        console.log("senior citizen discount")
+    }*/
+    
+  // let largestCountries = ["China", "India", "USA", "Indonesia", "Pakistan"]
+    
+    //for ( let i = 0; i<largestCountries.length; i++){
+    //    console.log(largestCountries[i])
+    //}
+    
+    //let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
+    
+    //largeCountries.pop()
+    //largeCountries.push("Pakistan")
+    //console.log(largeCountries)
+    //largeCountries.shift()
+    //largeCountries.unshift("China")
+    //console.log(largeCountries)
+    
+    /*let dayOfTheMonth = 13
+    let weekDay = "Friday"
+    
+    if (dayOfTheMonth === 13 && weekDay === "Friday"){
+        console.log("😱")
+    }*/
+    
+    let hands =["Rock", "Paper", "Scissor"]
+    
+    function randomHands(){
+        let randomIndex = Math.floor(Math.random ()* 3)
+        return hands [randomIndex]
+        }
+        console.log(randomHands())
+        
+    
+
+
