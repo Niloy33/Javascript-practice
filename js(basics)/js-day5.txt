@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-top: 10px;
+   
+    margin-bottom: 4px;
+    border-radius: 5px;
+    border-color: #5f9374;
+}
+button{
+    
+    background: #5f9341;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px
+    
+    
+    
+}
+
+****************************************
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <input type="text" id = "input-el">
+        <button id = "input-btn">Save Input</button>
+       <script src="index.js"></script>
+    </body>
+</html>
+****************************************
+/*let fruit = ["apple", "orange","apple", "apple","orange"]
+let appleShelf = document.getElementById("apple-shelf")
+let orangeShelf = document.getElementById("orange-shelf")
+
+function sortFruit(){
+    for(let i=0 ; i<fruit.length; i++){
+        if (fruit === "apple"){
+            appleShelf.textContent += "apple"
+        }else if(fruit === "orange") {
+            orangeShelf.textContent += "orange"
+            
+        }
+    }
+    
+}
+sortFruit()*/
+
