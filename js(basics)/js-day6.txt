@@ -1,0 +1,90 @@
+let myLeads = ["www.awsomelead.com","www.greatlead.com","www.superlead.com"]
+const myArray = []
+let inputEl = document.getElementById("input-el") 
+let inputBtn = document.getElementById("input-btn")
+
+
+
+inputBtn.addEventListener("click", function(){
+    myLeads.push(inputEl.value)
+    console.log(myLeads)
+    
+})
+
+for( let i=0; i<myLeads.length; i++){
+    console.log(myLeads[i])
+}
+*********************************************
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <input type="text" id = "input-el">
+        <button id = "input-btn">Save Input</button>
+       <script src="index.js"></script>
+    </body>
+</html>
+************************************************
+body{
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    padding-right: 10px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-top: 10px;
+   
+    margin-bottom: 4px;
+    border-radius: 5px;
+    border-color: #5f9374;
+}
+button{
+    
+    background: #5f9341;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px
+    
+    
+    
+}
+
+******************practice****************
+let box = document.getElementById("box")
+
+box.addEventListener("click", function(){
+    console.log("i want to open the box")
+})
+
+**********************************
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="box">Open the box!</div>
+        <script src="index.js"></script>
+    </body>
+</html>
+*************************************
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#box{
+    cursor: pointer;
+    background: lightcoral;
+    padding: 40px;
+    width: 200px;
+    text-align: center;
+    margin: 20px auto;
+    color: white;
+    font-weight: bold;
+}
